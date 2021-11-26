@@ -1,0 +1,53 @@
+h1 {
+    color: red;
+    background: black;
+}
+
+.acronym {
+    color: green;
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: red;
+}
+
+#bloc_indirect em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+strong {
+    font-weight: normal;
+    font-style: italic;
+}
+
+#mot_a_decorer {
+    color: blue;
+    text-decoration: underline;
+}
+
+article:nth-of-type(2) em {
+    color: orange;
+    font-weight: bold;
+    font-style: normal;
+}
+
+ol > li:first-child {
+    color: magenta;
+}
+
+ul > li {
+    color: black;
+}
+
+li + li li:nth-child(2){
+    color: purple;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}

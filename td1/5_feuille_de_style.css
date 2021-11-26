@@ -1,0 +1,24 @@
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-top: 2px solid lightblue;
+    border-bottom: 2px solid lightblue;
+    margin: 0;
+}
+
+body {
+    max-width: 1024px;
+    min-width: 800px;
+    display: block;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#intro {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}

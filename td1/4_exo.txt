@@ -1,0 +1,43 @@
+Block level elements :
+<article>
+<blockquote>
+<div>
+<fieldset>
+<figcaption>
+<figure>
+<footer>
+<form>
+<h1> -> <h6>
+<header>
+<li>
+<main>
+<nav>
+<noscript>
+<ol>
+<p>
+<section>
+<table>
+<tfoot>
+<ul>
+<video>
+
+
+Inline level elements :
+<a>
+<acronym>
+<b>
+<big>
+<br>
+<button>
+<code>
+<em>
+<i>
+<img>
+<input>
+<map>
+<output>
+<script>
+<select>
+<small>
+<span>
+<strong>

@@ -1,0 +1,95 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+/**** ASTUCE ****/
+/* border: solid 2px black; est équivalente à :
+/* border-style: solid;
+/* border-color: black;
+/* border-width: 2px;
+/* C'est une règle raccourci. */
+
+#part_1 p {
+    border: solid 2px black;
+    background-color: lightgrey;
+    width: 200px;
+}
+
+#part_2 p {
+    width: 200px;
+    margin: -2px;
+}
+
+#part_2 p:first-child {
+    border: solid 2px red;
+    background-color: pink;
+}
+
+#part_2 p {
+    border: solid 2px blue;
+    background-color: lightblue;
+}
+
+#part_2 p:last-child {
+    border: solid 2px green;
+    background-color: lightgreen;
+}
+
+/***************************/
+/* Vos modifications ici : */
+/***************************/
+
+/* Question 1 : Quelle est la distance totale entre les bords droits et gauche, et entre les bords supérieur et inférieur,
+du bloc 0 (c'est à dire du paragraphe qui est à l'intérieur du div d'id part1)
+si la propriété "padding: 10px 20px 30px 40px;" lui est affectée ?
+
+Réponse :
+	Pour la distance "gauche-droite" : 200px + 20px + 40px = 260px (bordure exclus sinon 264px avec les bordures incluses)
+	Pour la distance "haut-bas" : 10px + 30px + 20px = 60 px (bordure exclus sinon 64px avec les bordures incluses)
+*/
+
+/* Question 2 : Que se passe-t-il (quels changement visuel prennent effet)
+lorsque la propriété "margin: 0px 0px 100px 0px;" est ajoutée au bloc 0 ?
+Supposez que la propriété padding de la question précédente est toujours en place
+
+Réponse : Cela rajoute un espace de 100px en dessous du bloc 0.
+*/
+
+/* Question 3 : Que se passe-t-il si les blocs 1, 2 et 3 sont tous des boîtes
+- [] block ? -> Ils sont affichés les uns collés aux autres verticalement.
+- [] inline ? -> Ils sont affichés les uns collés aux autres horizontalement avec la taille minimum
+	correspondant à celle du texte les contenant. Changer width n'a pas d'effets sur les éléments.
+- [] inline-block ? -> Ils sont affichés les uns collés aux autres horizontalement avec la width indiquée.
+ */
+
+/* Question 4 (Optionnel) : Testez les propriétés suivantes sur le bloc 0 et prenez le temps
+de bien identifier les différentes zones de la boîte (contenu, padding, bordure, margin) :
+- [] margin à 1em, 100px, 10%, 2cm.
+- [] padding à 1em, 100px, 10%, 2cm.
+Essayer de ne changer que le padding ou margin du dessus, dessous ou des côtés (en utilisant margin-top par exemple).
+Essayer de donner quatre valeurs différentes au margin (ou le padding) du dessus, dessous ou des côtés.  */
+
+/* Question 5 (Optionnel) : Explorez ce qu'il se passe si les boîtes 1, 2 et 3 deviennent des boîtes
+- [] block, inline et inline-block respectivement ?
+- [] inline-block, inline et block respectivement ?
+- [] inline, block et inline-block respectivement ?
+Testez d'autres combinaisons possibles. */
+
+
+#part_1 p {
+    padding: 10px 20px 30px 40px;
+    margin: 0 0 100px 0;
+}
+
+#part_2 p {
+    display: block;
+}
