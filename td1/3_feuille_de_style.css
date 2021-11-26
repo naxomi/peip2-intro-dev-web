@@ -54,7 +54,7 @@ si la propriété "padding: 10px 20px 30px 40px;" lui est affectée ?
 
 Réponse :
 	Pour la distance "gauche-droite" : 200px + 20px + 40px = 260px (bordure exclus sinon 264px avec les bordures incluses)
-	Pour la distance "haut-bas" : 10px + 30px + 20px = 60 px (bordure exclus sinon 64px avec les bordures incluses)
+	Pour la distance "haut-bas" : 10px + 30px + 20px = 60px (bordure exclus sinon 64px avec les bordures incluses)
 */
 
 /* Question 2 : Que se passe-t-il (quels changement visuel prennent effet)
