@@ -1,0 +1,99 @@
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-top: 2px solid lightblue;
+    border-bottom: 2px solid lightblue;
+    margin: 0;
+}
+
+html {
+    max-width: 1024px;
+    min-width: 800px;
+    display: block;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#intro {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+
+/* ======= règles exercice 2 ======= */
+
+nav > ul {
+    width: 462px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    padding-top: 50px;
+
+}
+
+nav > ul > li {
+    float: left;
+    border: 2px solid blue;
+}
+
+nav + .separator {
+    padding-top: 50px;
+    clear: both;
+}
+
+nav ul > li > a {
+    color: black;
+    background-color: lightgreen;
+    display: block;
+    width: 150px;
+}
+
+nav ul > li > a:hover {
+    background-color: lightpink;
+}
+
+li {
+    list-style-type: none;
+}
+
+li > a {
+    text-decoration: none;
+}
+
+nav ul > li > ul {
+    display: none;
+    padding-left: 0;
+}
+
+/* ======= règles exercice 3 ======= */
+
+nav ul li:hover > ul {
+    display: block;
+    position: absolute;
+    margin: -1px;
+    border: 1px solid blue;
+}
+
+nav ul > li > ul > li:hover {
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+}
+
+/* ======= règles exercice 4 ======= */
+
+section {
+    width: 75%;
+    float: left;
+}
+
+#twitterfeed {
+    height: 500px;
+}
