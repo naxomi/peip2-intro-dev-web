@@ -27,7 +27,7 @@ nav > ul {
 	width: 462px;
 	margin: auto;
 	padding-top: 50px;
-	padding-left: 0px;
+	padding-left: 0;
 }
 
 nav li {
@@ -93,3 +93,32 @@ section {
 #suite {
 	clear: both;
 }
+
+/* ==== regles exercice 3.1 ==== */
+
+@media screen and (max-width: 800px) {
+	.cols {
+		float : none;
+		width: auto;
+	}
+
+	body {
+		margin-left: 10px;
+		margin-right: 10px;
+		min-width: auto;
+	}
+
+	#twitterfeed {
+		margin-left: 67%;
+	}
+
+	section {
+		max-width: 65%;
+	}
+
+}
+
+
+
+
+
