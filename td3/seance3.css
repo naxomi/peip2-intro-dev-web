@@ -22,6 +22,7 @@ h1 {
 	text-align: center;
 	margin: auto;
 }
+
 /*===== regles exercice 2 ======*/
 nav > ul {
 	width: 462px;
@@ -32,7 +33,7 @@ nav > ul {
 
 nav li {
 	list-style-type: none;
-	border:2px solid blue;
+	border: 2px solid blue;
 }
 
 nav > ul > li {
@@ -64,7 +65,7 @@ nav > ul ul {
 nav li:hover > ul {
 	display: block;
 	position: absolute;
-	padding-left: 0px;
+	padding-left: 0;
 	margin-left: -1px;
 }
 
@@ -115,7 +116,6 @@ section {
 	section {
 		max-width: 65%;
 	}
-
 }
 
 

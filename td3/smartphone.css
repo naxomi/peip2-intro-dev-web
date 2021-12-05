@@ -1,0 +1,59 @@
+#twitterfeed {
+    border-left: none;
+    border-top: 1px solid red;
+    margin-left: 0;
+}
+
+section {
+    float: none;
+    max-width: 100%;
+    width: auto;
+    margin: auto;
+}
+
+.cols {
+    width: 100%;
+    float: none;
+}
+
+body {
+    min-width: auto;
+}
+
+#menub {
+    width: 35px;
+}
+
+#menub > div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+nav > ul {
+    display: none;
+    width: auto;
+}
+
+nav:hover > ul {
+    display: block;
+}
+
+nav:hover > #menub {
+    display: none;
+}
+
+nav > ul > li {
+    position: relative;
+    float: none;
+    width: 150px;
+    height: 18px;
+}
+
+nav > ul > li > ul {
+    position: relative;
+    left: 152px;
+    bottom: -24px;
+    width: 154px;
+}
