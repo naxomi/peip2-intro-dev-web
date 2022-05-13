@@ -26,7 +26,7 @@ public class ChessGameInterface {
 	* This is a helper method for createHtmlChessBoard.
 	* This method take the FEN and creates an HTML table that represent the chess board
 	*
-	* @param fen. The FEN String
+	* @param fen The FEN String
 	*/
 	private void printChessTable(String fen, PrintWriter pw) {
 		String[] rows = fen.split("/");
@@ -54,7 +54,7 @@ public class ChessGameInterface {
 	* This method will write all constants needed by the HTML page: styles, header and footer
 	* It will call printChessTable(), which will write the dynamic part.
 	* 
-	* @param fen. The FEN String.
+	* @param fen The FEN String.
 	*/
 	public void createHtmlChessBoard(String fen) {
 		String header = "<html>\n <head>\n  <meta http-equiv=\"refresh\" content=\"2\"/><style type=\"text/css\">        .chess_board { border:1px solid #333; margin-left: 40px;}        .chess_board td {            background:#fff; background:-moz-linear-gradient(top, #fff, #eee);            box-shadow:inset 0 0 0 1px #fff;            -moz-box-shadow:inset 0 0 0 1px #fff;            -webkit-box-shadow:inset 0 0 0 1px #fff;            height:40px; text-align:center; vertical-align:middle; width:40px; font-size:30px;}        .chess_board tr:nth-child(odd) td:nth-child(even),        .chess_board tr:nth-child(even) td:nth-child(odd) {            background:#ccc; background:-moz-linear-gradient(top, #ccc, #eee);            box-shadow:inset 0 0 10px rgba(0,0,0,.4);            -moz-box-shadow:inset 0 0 10px rgba(0,0,0,.4);            -webkit-box-shadow:inset 0 0 10px rgba(0,0,0,.4); }        .horizontallabels td, .verticallabels td {          height:38px;text-align:center; vertical-align:middle; width:36px; font-size:29px;        }        .horizontallabels {          padding-left: 40px;        }        .verticallabels {          float:left; width:40px;        }    </style>    </head><body>  <table class=\"verticallabels\">    <tr><td>8<td></tr>    <tr><td>7<td></tr>    <tr><td>6<td></tr>    <tr><td>5<td></tr>    <tr><td>4<td></tr>    <tr><td>3<td></tr>    <tr><td>2<td></tr>    <tr><td>1<td></tr>  </table>  <table class=\"chess_board\" cellspacing=\"0\" cellpadding=\"0\">";
@@ -82,8 +82,8 @@ public class ChessGameInterface {
 	* Just a helper to parse a JSON Object. It gives the String value associated to a key.
 	* The value we're looking for must be a String!
 	*
-	* @param json. The JSON Object in String format
-	* @param jsonkey. The JSON key we are intested in.
+	* @param json The JSON Object in String format
+	* @param jsonkey The JSON key we are intested in.
 	* 
 	* @return the value associated to the key.
 	*/
@@ -122,11 +122,11 @@ public class ChessGameInterface {
 		System.out.println("La valeur associée à la clé " + jsonkey + "est : " + cgi.getValueFromKeyJSON(json,jsonkey));
 
 		// Testez votre code avec {"id":"123456","var1":"val1"} afin d'obtenir sur la sortie standard :
-		String jsonQuestion3 = '{"id":"123456","var1":"val1"}';
+		String jsonQuestion3 = "{\"id\":\"123456\",\"var1\":\"val1\"}";
 		ChessGameInterface.jsonParser(new JSONObject(jsonQuestion3));
 
 		// Testez votre code avec {"id":"123456","tab1":["item1", "item2"]} afin d'obtenir sur la sortie standard :
-		String jsonQuestion4 = '{"id":"123456","tab1":["item1", "item2"]}';
+		String jsonQuestion4 = "{\"id\":\"123456\",\"tab1\":[\"item1\", \"item2\"]}";
 		ChessGameInterface.jsonParser(new JSONObject(jsonQuestion4));
 
 		// 5 = Optionnel

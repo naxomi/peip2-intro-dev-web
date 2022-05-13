@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="teacher_json">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/td6/lib/teacher_json.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
